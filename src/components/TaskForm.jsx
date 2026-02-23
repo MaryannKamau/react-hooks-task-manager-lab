@@ -17,7 +17,7 @@ function TaskForm() {
     
     
     const newTask = {
-      name: taskName,
+      title: taskName,
       completed: false
     };
 
@@ -35,7 +35,7 @@ function TaskForm() {
         <input
           id={inputId}
           type="text"
-          placeholder="What needs to be done?"
+          placeholder="Add a new task..."
           value={taskName}
           onChange={(e) => setTaskName(e.target.value)}
         />
